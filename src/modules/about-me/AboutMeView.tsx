@@ -8,6 +8,9 @@ const technologies = [
   "React",
   "Next.js",
   "Tailwind CSS",
+  "Clerk",
+  "Supabase",
+  "Zustand",
   "Node.js",
   "Git",
 ];

@@ -1,7 +1,8 @@
 "use client";
 import { useLanguage } from "@/hooks/useLanguage";
 import { useNavigation } from "@/hooks/useNavegation";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Mail } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function HeroView() {
   const { t } = useLanguage();
@@ -39,24 +40,27 @@ export default function HeroView() {
 
         <div className="flex items-center gap-6 mb-12">
           <a
-            href="https://github.com/lamc305"
+            title="GitHub"
+            href="https://github.com/soyluismedina"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
-            <Github className="w-6 h-6" />
+            <FaGithub className="w-6 h-6" />
           </a>
           <a
             href="https://linkedin.com/in/soyluismedina/"
             target="_blank"
+            title="LinkedIn"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
-            <Linkedin className="w-6 h-6" />
+            <FaLinkedin className="w-6 h-6" />
           </a>
           <a
             href="mailto:lamc3005@gmail.com"
             target="_blank"
+            title="Email"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
             <Mail className="w-6 h-6" />

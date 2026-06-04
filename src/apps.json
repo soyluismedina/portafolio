@@ -1,19 +1,39 @@
 [
   {
+    "name": "Movant Studio",
+    "img": "/movant_studio.png",
+    "id": "1",
+    "tecnologies": [
+      "TypeScript",
+      "TailwindCSS",
+      "Next.js",
+      "RHF",
+      "Zod",
+      "Supabase"
+    ],
+    "live": "https://movantstudio.com/"
+  },
+  {
+    "name": "Rally BT",
+    "img": "/rally_bt.png",
+    "id": "2",
+    "tecnologies": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Supabase",
+      "Zustand",
+      "Clerk"
+    ],
+    "repositorio": "https://github.com/soyluismedina/rally-bt"
+  },
+  {
     "name": "Todo-App",
     "img": "https://raw.githubusercontent.com/soyluismedina/Todo-App/main/photos/modeLight.webp",
-    "id": "1",
+    "id": "3",
     "tecnologies": ["React", "CSS Vanilla", "Framer Motion"],
     "repositorio": "https://github.com/soyluismedina/Todo-App",
     "live": "https://todo-app-lamc305.vercel.app/"
-  },
-  {
-    "name": "Movie-rec",
-    "img": "https://raw.githubusercontent.com/soyluismedina/movie-rec-2.0/main/public/image.png",
-    "id": "2",
-    "tecnologies": ["Next.js", "Tailwind CSS"],
-    "repositorio": "https://github.com/soyluismedina/movie-rec-2.0",
-    "live": "https://movie-rec-2-0.vercel.app/"
   },
   {
     "name": "Rest Countries",

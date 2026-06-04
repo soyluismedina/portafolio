@@ -1,9 +1,10 @@
 "use client";
 import apps from "@/apps.json";
 import { useLanguage } from "@/hooks/useLanguage";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 export default function ProjectsView() {
   const { t } = useLanguage();
@@ -32,6 +33,7 @@ export default function ProjectsView() {
                 <Image
                   src={project.img}
                   alt={project.name}
+                  loading="eager"
                   fill
                   unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -60,24 +62,28 @@ export default function ProjectsView() {
                   className="flex gap-3 h-full  "
                   style={{ alignItems: "self-end" }}
                 >
-                  <Link
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    {t["projects.demo"]}
-                  </Link>
-                  <Link
-                    href={project.repositorio}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 border border-border text-foreground rounded-md hover:bg-muted transition-colors text-sm font-medium"
-                  >
-                    <Github className="w-4 h-4" />
-                    {t["projects.code"]}
-                  </Link>
+                  {project.live && (
+                    <Link
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      {t["projects.demo"]}
+                    </Link>
+                  )}
+                  {project.repositorio && (
+                    <Link
+                      href={project.repositorio}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 border border-border text-foreground rounded-md hover:bg-muted transition-colors text-sm font-medium"
+                    >
+                      <FaGithub className="w-4 h-4" />
+                      {t["projects.code"]}
+                    </Link>
+                  )}
                 </div>
               </div>
             </article>
