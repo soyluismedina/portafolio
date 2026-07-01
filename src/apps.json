@@ -24,8 +24,7 @@
       "Supabase",
       "Zustand",
       "Clerk"
-    ],
-    "repositorio": "https://github.com/soyluismedina/rally-bt"
+    ]
   },
   {
     "name": "Todo-App",

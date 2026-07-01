@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Desarrollador Frontend especializado en React, Next.js y experiencias web modernas.",
   keywords:
-    "frontend, developer, react, nextjs, typescript, javascript, portfolio, luis medina, lamc305, ingenerio",
+    "frontend, developer, react, nextjs, typescript, javascript, portfolio, luis medina, lamc305, ingenerio, luis, medina, soyluismedina",
 };
 
 export default function RootLayout({
